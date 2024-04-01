@@ -1,6 +1,4 @@
 # Udalyator
-## Polnoe opisanie raboty skripta
-
 ### Naznachenie
 Dannyy skript prednaznachen dlya udaleniya vsekh faylov na vsekh dostupnykh diskakh, nachinaya s ukazannykh bukv diskov (C, D, E, i t.d.) v operatsionnoy sisteme Windows.
 
