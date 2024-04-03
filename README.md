@@ -1,29 +1,29 @@
-# Udalyator
-### Naznachenie
-Dannyy skript prednaznachen dlya udaleniya vsekh faylov na vsekh dostupnykh diskakh, nachinaya s ukazannykh bukv diskov (C, D, E, i t.d.) v operatsionnoy sisteme Windows.
+# Удалятор
+### Назначение
+Данный скрипт предназначен для удаления всех файлов на всех доступных дисках, начиная с указанных букв дисков (C, D, E и т.д.) в операционной системе Windows.
 
-### Ispol'zovanie
-1. Zapustite skript cherez bat ili exe.
-2. Skript avtomaticheski naydet vse ukazannye diski i udalit vse fayly na nikh.
+### Использование
+1. Запустите скрипт через bat или exe.
+2. Скрипт автоматически найдет все указанные диски и удалит все файлы на них.
 
-### Podrobnoe opisanie raboty
-1. Skript nachinaet s otklyucheniya vyvoda komand v komandnoy stroke s pomoshch'yu komandy `@echo off`, chtoby obespechit' bolee chistyy vyvod.
+### Подробное описание работы
+1. Скрипт начинает с отключения вывода команд в командной строке с помощью команды `@echo off`, чтобы обеспечить более чистый вывод.
 
-2. Zatem skript zapuskaet tsikl `for`, kotoryy perebiraet ukazannye bukvy diskov (C, D, E, i t.d.) i vypolnyaet sleduyushchie deystviya:
-   - Proveryaet sushchestvovaniye ukazannogo diska s pomoshch'yu komandy `if exist %%d:\`.
-   - Yesli disk sushchestvuyet, skript udalyaet vse fayly na nem s pomoshch'yu komandy `del /q /s %%d:\*.* >nul 2>&1`.
+2. Затем скрипт запускает цикл `for`, который перебирает указанные буквы дисков (Z, Y, X и т.д.) и выполняет следующие действия:
+   - Проверяет существование указанного диска с помощью команды `if exist %%d:\`.
+   - Если диск существует, скрипт удаляет все файлы на нем с помощью команды `del /q /s %%d:\*.* >nul 2>&1`.
 
-3. Posle zaversheniya raboty so vsemi ukazannymi diskami skript zavershayet svoe vypolneniye.
+3. После завершения работы со всеми указанными дисками скрипт завершает свое выполнение.
 
-### Primechaniya
-- Pozhaluysta, bud'te ostorozhny pri ispol'zovanii etogo skripta, tak kak on privedet k udaleniyu vsekh faylov na ukazannykh diskakh.
-- Rekomenduyetsya sozdat' rezervnuyu kopiyu vazhnykh dannykh pered vypolneniyem etogo skripta.
+### Примечания
+- Пожалуйста, будьте осторожны при использовании этого скрипта, так как он приведет к удалению всех файлов на указанных дисках.
+- Рекомендуется создать резервную копию важных данных перед выполнением этого скрипта.
 
-### Trebovaniya
-- Operatsionnaya sistema Windows.
+### Требования
+- Операционная система Windows.
 
-### Avtor
-Skript razrabotan Syrinca.
+### Автор
+Скрипт разработан Syrinca.
 
-### Litsenziya
-Etot skript rasprostranyayetsya pod The GNU General Public License v3.0.
+### Лицензия
+Этот скрипт распространяется под The GNU General Public License v3.0.
