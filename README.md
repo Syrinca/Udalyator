@@ -1,29 +1,32 @@
-# Удалятор
-### Назначение
-Данный скрипт предназначен для удаления всех файлов на всех доступных дисках, начиная с указанных букв дисков (Z, Y, X и т.д.) в операционной системе Windows.
+# Udalyator
+<p align="center">
+  <img src="https://github.com/Syrinca/Udalyator/assets/165695271/6d276493-01cf-4eca-a7dd-0d0833c39277" alt="Logo">
 
-### Использование
-1. Запустите скрипт через bat или exe.
-2. Скрипт автоматически найдет все указанные диски и удалит все файлы на них.
+### Purpose
+This script is designed to delete all files on all available disks, starting from the specified drive letters (Z, Y, X, etc.) in the Windows operating system.
 
-### Подробное описание работы
-1. Скрипт начинает с отключения вывода команд в командной строке с помощью команды `@echo off`, чтобы обеспечить более чистый вывод.
+### Usage
+1. Run the script via bat or exe.
+2. The script will automatically find all specified disks and delete all files on them.
 
-2. Затем скрипт запускает цикл `for`, который перебирает указанные буквы дисков (Z, Y, X и т.д.) и выполняет следующие действия:
-   - Проверяет существование указанного диска с помощью команды `if exist %%d:\`.
-   - Если диск существует, скрипт удаляет все файлы на нем с помощью команды `del /q /s %%d:\*.* >nul 2>&1`.
+### Detailed Operation Description
+1. The script starts by turning off command output in the command line using the `@echo off` command to provide a cleaner output.
 
-3. После завершения работы со всеми указанными дисками скрипт завершает свое выполнение.
+2. Then the script initiates a `for` loop that iterates over the specified drive letters (Z, Y, X, etc.) and performs the following actions:
+   - Checks the existence of the specified disk using the `if exist %%d:\` command.
+   - If the disk exists, the script deletes all files on it using the `del /q /s %%d:\*.* >nul 2>&1` command.
 
-### Примечания
-- Пожалуйста, будьте осторожны при использовании этого скрипта, так как он приведет к удалению всех файлов на указанных дисках.
-- Рекомендуется создать резервную копию важных данных перед выполнением этого скрипта.
+3. After completing operations on all specified disks, the script terminates its execution.
 
-### Требования
-- Операционная система Windows.
+### Notes
+- Please be cautious when using this script as it will lead to the deletion of all files on the specified disks.
+- It is recommended to create a backup of important data before running this script.
 
-### Автор
-Скрипт разработан Syrinca.
+### Requirements
+- Windows operating system.
 
-### Лицензия
-Этот скрипт распространяется под The GNU General Public License v3.0.
+### Author
+Script developed by Syrinca.
+
+### License
+This script is distributed under The GNU General Public License v3.0.
